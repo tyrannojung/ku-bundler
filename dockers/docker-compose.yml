@@ -4,7 +4,7 @@ services:
   geth:
     image: ethereum/client-go:v1.10.26
     command:
-      - --miner.gaslimit=12000000
+      - --miner.gaslimit=30000000 
       - --http
       - --http.api=personal,eth,net,web3,debug
       - --http.vhosts=*,localhost,host.docker.internal

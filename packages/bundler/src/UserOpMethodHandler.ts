@@ -105,6 +105,8 @@ export class UserOpMethodHandler {
       ...await resolveProperties(userOp1) as any
     }
 
+    console.log("userOp=======",userOp)
+
     // todo: checks the existence of parameters, but since we hexlify the inputs, it fails to validate
     await this._validateParameters(deepHexlify(userOp), entryPointInput)
     // todo: validation manager duplicate?
